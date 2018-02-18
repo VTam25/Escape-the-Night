@@ -131,7 +131,6 @@ def ask_bubble_scenario():
     bubble_choice = input('')
     if bubble_choice != ('Pull out your Nintendo DS') and bubble_choice != ('Help your friends decide where to go'):
         print("Not a valid answer")
-<<<<<<< HEAD
     elif bubble_choice == ('Pull out your Nintendo DS'):
         print("Did you bring your DS (y/n)?")
         game2 = input('')
@@ -145,17 +144,6 @@ def ask_bubble_scenario():
             print(friend+ "finds a place to park and you guys start deciding on what to do next.")
             print(friend+ " said 'Hey there's a bubble tea shop nearby.'")
     elif bubble_choice == ('Help your friends decide where to go'):
-=======
-    elif game = ('n') and choice = ('Pull out your Nintendo DS'):
-        print("You didn't bring your DS with you. Sorry.")
-        print("Your " +friend "finds a place to park and you guys start deciding on what to do next.")
-        print(+friend " said 'Hey there's a bubble tea shop nearby.")
-        return None
-    elif choice = ('Pull out Nintendo DS'):
-        print("You pulled out your Nintendo DS")
-        return None
-    elif choice = ('Help your friends decide where to go'):
->>>>>>> ecb046d7b15f3df8f1fb39c8ea1c5b456f75d2d1
         print("You decided to help your friends choose where to go")
         return None
 
