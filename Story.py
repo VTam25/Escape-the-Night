@@ -91,7 +91,7 @@ def car_scenario():
         print("You text your friend to see if they arrived yet.")
         print("They haven't.")
         print("You realize that the car in front of you is a stranger, you back away.") 
-        return None
+        pic_scenario()
     
 def pic_scenario():
     print("Congrats, you aren't an idiot! You wait for for your friend's actual car to pull up and hop in.")
@@ -105,10 +105,10 @@ def pic_scenario():
                 print("Do you go with them to take pictures? (y/n)")
     elif pic_scenario == ('y'):
                 print("You decided to take some insta-worthy pics with your friends!")
-                return None
+                baby_scenario()
     elif pic_scenario == ('n'):
-                print("You stayed in the car and rested a little while your friends took pictures")
-                return None
+                print("You stayed in the car and rested a little while your friends took some pictures. After a while they come back and keep driving.")
+                ask_bubble_scenario()
             
 def baby_scenario():
     print("Suddenly, a shadow appears near a streelight. It's a stroller, and you hear a baby crying. Do you ignore it or investigate it on your own?")
@@ -118,7 +118,7 @@ def baby_scenario():
         print("Do you ignore it, investigate it on your own, or investigate with your friends?")
     elif baby_scenario == ('ignore it'):
         print('You are going to ignore the crying baby and wait with your friends. You and your friend have finished taking pictures and you all get back into the car.')
-        return None
+        ask_bubble_scenario()
     elif baby_scenario == ('investigate it on your own'):
         print('You are going to check out the stroller by yourself. However, when you walk you to it, there is no baby! The next thing you know, there is a cloth over your mouth and nose, and you slowly black out... GAME OVER') 
         kidnap_end()
@@ -141,7 +141,7 @@ def ask_bubble_scenario():
             phone_decision()
         elif game2 == ('n'):
             print("You didn't bring your DS with you. Sorry.")
-            print(friend+ "finds a place to park and you guys start deciding on what to do next.")
+            print(friend+ " finds a place to park and you guys start deciding on what to do next.")
             print(friend+ " said 'Hey there's a bubble tea shop nearby.'")
     elif bubble_choice == ('Help your friends decide where to go'):
         print("You decided to help your friends choose where to go")
@@ -167,7 +167,7 @@ def phone_decision ():
             elif choice3 == ('y'):
                 print("Ok you plug in your phone and call your friends.")
                 print("They tell you to meet them at laser craze")
-                return None
+                taxi_decision()
             elif choice3 == ('n'):
                 print("RIP. Good luck")
                 robbed_end()
@@ -183,19 +183,19 @@ def robbed_end ():
     print("")
     exit()  
 
-def taxi_decision
-	print("Congrats! you made the right decision to bring your phone and portable charger!")
-	print("You decide to call a taxi cab.") 
-	print("Do you want to just leave your friends and go home or meet them at the laser tag place? tag or home?")
-		choice=input('')
-		if choice != ('tag') and != ('home'):
-			print("Not a valid answer. tag or home?")
-		elif choice == ('tag')
-			print("You decide to take the cab to the laser tag place to meet up with your friends")
-			return None
-		elif choice == ('home')
-			print("You decide to just go home and call it a night.")
-			win_end()
+def taxi_decision ():
+    print("Congrats! you made the right decision to bring your phone and portable charger!")
+    print("You decide to call a taxi cab.") 
+    print("Do you want to just leave your friends and go home or meet them at the laser tag place? tag or home?")
+    choice=input('')
+    if choice != ('laser tag') and choice != ('home'):
+        print("Not a valid answer. Do you want to just leave your friends and go home or meet them at a laser tag place?")
+    elif choice == ('laser tag'):
+        print("You decide to take the cab to the laser tag place to meet up with your friends")
+        return None
+    elif choice == ('home'):
+        print("You decide to just go home and call it a night.")
+        win_end()
 
 
 
@@ -208,14 +208,18 @@ def taxi_decision
     
 def kidnap_end():
     print("")
-    exit()
+    end()
 
 def win_end():
     print("")
-    exit()
+    end()
 
 def die_end():
     print("")
+    end()
+
+def end ():
+    print("be safe...")
     exit()
     
 #This is where we run the story
@@ -230,3 +234,5 @@ car_scenario()
 pic_scenario()
 baby_scenario()
 ask_bubble_scenario()
+phone_decision()
+taxi_decision()
