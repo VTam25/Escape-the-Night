@@ -147,8 +147,40 @@ def ask_bubble_scenario():
         print("You decided to help your friends choose where to go")
         return None
 
+def phone_decision ():
+	print("You look around and start to walk around looking for your group but soon realize you are alone, confused, and S H O O K.")
+	print("You try calling them. Where is your phone? in my pocket or at home?") 
+	choice = input('')
+	if choice != ('at home') and != ('in my pocket'):
+		print("Not a valid answer. Where is your phone? in my pocket or at home?")
+	elif choice == ('in my pocket'):
+		print("Do you want to call your friends? (y/n)")
+		if choice2 != ('y') and != ('n'):
+			print("Not a valid answer. Do you want to call your friends? (y/n)")
+		elif choice2 == ('y'):
+			print("Your phone is running out. To call them you must use a portable charger")
+			print("Did you bring your portable charger? (y/n)")
+				choice3 = input('')
+				if choice3 != ('y') and != ('n'):
+					print("Not a valid answer. Did you bring your portable charger? (y/n)")
+				elif choice3 == ('y'):
+					print("Ok you plug in your phone and call your friends.")
+					print("They tell you to meet them at laser craze")
+					return None
+				elif choice3 == ('n'):
+					print("RIP. Good luck")
+					robbed_end()
+		elif choice2 == ('n'):
+			print("RIP. Good luck")
+			robbed_end()
+	elif choice == ('at home'):
+		print("RIP Good Luck") 
+		robbed_end()
+
+
 def robbed_end ():
-    print("")    
+    print("")
+    exit()  
 
 
 
