@@ -76,8 +76,8 @@ def phone():
         return None
 
 def car_scenario():
-
-
+    print("You head out the door and get ready to meet " + friend)
+    
 
 
 
@@ -165,7 +165,24 @@ def baby_scenario():
 
 
 
+def ask_bubble_scenario():
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
 
