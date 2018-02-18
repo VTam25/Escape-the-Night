@@ -200,7 +200,23 @@ def taxi_decision ():
         print("You decide to just go home and call it a night.")
         win_end()
 
-
+def laser_tag ():
+	print("You made it to the laser craze place and joined a game with your friends.")
+	print("You're having a fun time tagging people when you see a figure in the distance.")
+	print("What do you do? shoot, run, or run to your friends?")
+	choice = input('')
+	if choice != (shoot) and choice != (run) and choice != (run to your friends):
+		print("Not a valid answer. What do you do? Shoot, Run, or Run to your friends?")
+	elif choice == ('Shoot'):
+		print("UH OH the guy's laser gun was actually A REAL GUN!!!")
+		die_end()
+	elif choice == ('Run'):
+		print("UH OH the guy's laser gun was actually A REAL GUN! You escaped but your friends did not!!!")
+		print("You wait for hours with the paramedics and police until they say you can finally go home.")
+		win_end()
+	elif choice == ('Run to your friends'):
+		print("UH OH the guy's lasesr gun was actually A REAL GUN! You and your entire group died!!!")
+		die_end()
 
 
     
@@ -223,11 +239,11 @@ def kidnap_end():
             end()
 
 def win_end():
-    print("")
+    print("You made it home safe and sound! Congrats! Sorry for the rough night! Have a goodnight's sleep")
     end()
 
 def die_end():
-    print("")
+    print("You died. So sorry :(")
     end()
 
 def end ():
