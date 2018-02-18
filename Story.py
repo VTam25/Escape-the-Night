@@ -75,7 +75,104 @@ def phone():
         print("Good luck.")
         return None
 
+def car_scenario():
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def pic_scenario():
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def baby_scenario():
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     
 
 def kidnap_end():
@@ -84,6 +181,8 @@ def kidnap_end():
 def win_end():
     print("")
 
+#This is where we run the story
+    
 start()
 back_story()
 gameoptions_to_bring()
