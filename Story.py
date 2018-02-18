@@ -77,35 +77,20 @@ def phone():
 
 def car_scenario():
     print("You head out the door and get ready to meet " + friend)
+    print("You see a car that looks like your friend's pull up to you and it honks at you to get in.")
+    print("The windows are tinted but you heard your friend had recently gotten their windows tinted.")
+    print("Do you get in the car (y/n)?")
+    get_in = input("")
+    if get_in != ("y") and get_in != ("n"):
+        print("Not a valid answer")
+    elif get_in = ("y"):
+        kidnap_end()
+    elif get_in = ("n"):
+        print("You text your friend to see if they arrived yet."
+        print("They haven't.")
+        print("You realize that the car in front of you is a stranger, you back away.") 
+        return None
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def pic_scenario():
 	print("Congrats, you aren't an idiot! You wait for for your friend's actual car to pull up and hop in.")
 	print("You and your friends are now headed into the city.")
@@ -120,32 +105,6 @@ def pic_scenario():
 			print("You decided to take some insta-worthy pics with your friends!")
 		elif pic_decision = ('n')
 			print("You stayed in the car and rested a little while your friends took pictures")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 def baby_scenario():
     print("Suddenly, a shadow appears near a streelight. It's a stroller, and you hear a baby crying. Do you ignore it, investigate it on your own, or investigate with your friends?")
@@ -162,11 +121,6 @@ def baby_scenario():
     elif baby_scenario == ('Investigate it with your friends'):
         print('You are going to check out the stroller with your friends')
         return None 
-
-
-
-
-
 
 
 def ask_bubble_scenario():
