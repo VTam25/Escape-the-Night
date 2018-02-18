@@ -1,7 +1,16 @@
-body {
-	background-color: powderblue;
+
+
+
+body{
+	background-image: url(HotGvrX.jpg);
 }
 
 h1 {
 	text-align: center;
+	color: white;
+}
+
+h3 {
+	text-align: center;
+	color: white;
 }
