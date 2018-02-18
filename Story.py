@@ -146,6 +146,7 @@ def ask_bubble_scenario():
         print("You didn't bring your DS with you. Sorry.")
         print("Your " +friend "finds a place to park and you guys start deciding on what to do next.")
         print(+friend " said 'Hey there's a bubble tea shop nearby.")
+        return None
     elif choice = ('Pull out Nintendo DS'):
         print("You pulled out your Nintendo DS")
         return None
