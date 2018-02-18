@@ -148,27 +148,20 @@ def pic_scenario():
 
 
 def baby_scenario():
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    print("Suddenly, a shadow appears near a streelight. It's a stroller, and you hear a baby crying. Do you ignore it, investigate it on your own, or investigate with your friends?")
+    baby_scenario = input('')
+    if baby_scenario != ('Ignore it') and baby_scenario != ('Investigate it on your own') and baby_scenario != ('Investigate with your friends'):
+        print("Not a valid answer.")
+        print("Do you ignore it, investigate it on your own, or investigate with your friends?")
+    elif baby_scenario == ('Ignore it'):
+        print('You are going to ignore the crying baby and wait with your friends.')
+        return None
+    elif baby_scenario == ('Investigate it on your own'):
+        print('You are going to check out the stroller by yourself. However, when you walk you to it, there is no baby! The next thing you know, there is a cloth over your mouth and nose, and you slowly black out... GAME OVER') 
+        kidnap_end()
+    elif baby_scenario == ('Investigate it with your friends'):
+        print('You are going to check out the stroller with your friends')
+        return None 
 
 
 
@@ -185,35 +178,8 @@ def ask_bubble_scenario():
 
 
 
-def ask_bubble_scenario():
-    print("You and/or your friend have finished taking pictures and you all get back into the car.")
-    print("Your " +friend "finds a place to park and you guys start deciding on what to do next.")
-    print(+friend " said 'Hey there's a bubble tea shop nearby.")
-    print("You start to get bored as they talk. Do you...")
-<<<<<<< HEAD
-=======
-
-
->>>>>>> d94cb01440ddd53eec7afde184d9e6afbb76a42a
-
-
-
-
-
-
-
-
-<<<<<<< HEAD
-<<<<<<< HEAD
 def robbed_end ():
 	print("")    
-=======
-
-
-
-
-
-=======
 
 
 
@@ -225,16 +191,6 @@ def robbed_end ():
 
 
     
-
-
-
-    
->>>>>>> d94cb01440ddd53eec7afde184d9e6afbb76a42a
-    
-
-
-
->>>>>>> d94cb01440ddd53eec7afde184d9e6afbb76a42a
     
 def kidnap_end():
     print("")
