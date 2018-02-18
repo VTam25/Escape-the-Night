@@ -210,8 +210,17 @@ def taxi_decision ():
     
     
 def kidnap_end():
-    print("")
-    end()
+    print("Your mouth was suddenly covered with a cloth that has chloroform on it")
+    print("Everything goes dark. You've been kidnapped.")
+    print("So sad. This could've easily been prevented. Choose wisely next time :)")
+    print("Would you like to play again?(y/n)")
+    play_again = input(" ")
+        if play_again != ("y") and play_again != ("n"):
+            print("Not a valid answer")
+        elif play_again == ("y"):
+            start()
+        elif play_again == ("n"):
+            end()
 
 def win_end():
     print("")
