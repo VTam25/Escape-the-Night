@@ -227,11 +227,19 @@ def kidnap_end():
     print("So sad. This could've easily been prevented. Choose wisely next time :)")
 
 def win_end():
+<<<<<<< HEAD
     print("You made it home safe and sound! Sorry for the rough night. Have a good night sleep!")
     end()
 
 def die_end():
     print("You die. So sorry :(")
+=======
+    print("You made it home safe and sound! Congrats! Sorry for the rough night! Have a goodnight's sleep")
+    end()
+
+def die_end():
+    print("You died. So sorry :(")
+>>>>>>> 25ee2177e008be01663cdfc75fc29a34f1e7be9f
     end()
 
 def end ():
