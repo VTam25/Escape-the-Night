@@ -107,8 +107,19 @@ def car_scenario():
 
 
 def pic_scenario():
-
-
+	print("Congrats, you aren't an idiot! You wait for for your friend's actual car to pull up and hop in.")
+	print("You and your friends are now headed into the city.")
+	print("You look out the window and see a beautiful sunset to your right")
+	print(""Guys look at that view!" someone says. "Wow, lets go take some pictures" your friend suggests")
+	print("Your group decides to go take some pictures. Do you go with them? (y/n)")
+	pic_decision = ('')
+		if pic_decision != ('y') and pic_decision != ('n')
+			print("Not a valid answer")
+			print("Do you go with them to take pictures? (y/n")
+		elif pic_decision = ('y')
+			print("You decided to take some insta-worthy pics with your friends!")
+		elif pic_decision = ('n')
+			print("You stayed in the car and rested a little while your friends took pictures")
 
 
 
