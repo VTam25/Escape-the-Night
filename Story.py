@@ -11,8 +11,7 @@ def start():
     print("What is your name?")
     name = input('')
     print("Hello " + name)
-    print("What is your friend's name?")
-    friend = input('')
+
     
 
 def back_story():
@@ -21,6 +20,7 @@ def back_story():
     print("***flash*** A catchy alarm goes off on your cell phone. It's 4:20pm. You whisper to yourself that there's only an hour left until you have to go out with friends.")
     print("You start to get ready...")
     print("What are you going to bring?")
+
 
 def gameoptions_to_bring():
     print("Do you want to bring a game (y/n)?")
@@ -85,6 +85,7 @@ def car_scenario():
     if get_in != ("y") and get_in != ("n"):
         print("Not a valid answer")
     elif get_in == ("y"):
+        print('Bye bye...GAME OVER')
         kidnap_end()
     elif get_in == ("n"):
         print("You text your friend to see if they arrived yet.")
@@ -93,70 +94,61 @@ def car_scenario():
         return None
     
 def pic_scenario():
-	print("Congrats, you aren't an idiot! You wait for for your friend's actual car to pull up and hop in.")
-	print("You and your friends are now headed into the city.")
-	print("You look out the window and see a beautiful sunset to your right")
-	print("'Guys look at that view!' someone says. 'Wow, lets go take some pictures' your friend suggests")
-	print("Your group decides to go take some pictures. Do you go with them? (y/n)")
-	pic_decision = ('')
-	if pic_decision != ('y') and pic_decision != ('n'):
-		print("Not a valid answer")
-		print("Do you go with them to take pictures? (y/n")
-	elif pic_decision == ('y'):
-		print("You decided to take some insta-worthy pics with your friends!")
-		return None
-	elif pic_decision == ('n'):
-		print("You stayed in the car and rested a little while your friends took pictures")
+    print("Congrats, you aren't an idiot! You wait for for your friend's actual car to pull up and hop in.")
+    print("You and your friends are now headed into the city.")
+    print("You look out the window and see a beautiful sunset to your right")
+    print("'Guys look at that view!' someone says. 'Wow, lets go take some pictures' your friend suggests")
+    print("Your group decides to go take some pictures. Do you go with them? (y/n)")
+    pic_scenario = input('')
+    if pic_scenario != ('y') and pic_scenario != ('n'):
+                print("Not a valid answer")
+                print("Do you go with them to take pictures? (y/n)")
+    elif pic_scenario == ('y'):
+                print("You decided to take some insta-worthy pics with your friends!")
                 return None
-
-
-
+    elif pic_scenario == ('n'):
+                print("You stayed in the car and rested a little while your friends took pictures")
+                return None
+            
 def baby_scenario():
-    print("Suddenly, a shadow appears near a streelight. It's a stroller, and you hear a baby crying. Do you ignore it, investigate it on your own, or investigate with your friends?")
+    print("Suddenly, a shadow appears near a streelight. It's a stroller, and you hear a baby crying. Do you ignore it or investigate it on your own?")
     baby_scenario = input('')
-    if baby_scenario != ('Ignore it') and baby_scenario != ('Investigate it on your own') and baby_scenario != ('Investigate with your friends'):
+    if baby_scenario != ('ignore it') and baby_scenario != ('investigate it on your own'):
         print("Not a valid answer.")
         print("Do you ignore it, investigate it on your own, or investigate with your friends?")
-    elif baby_scenario == ('Ignore it'):
-        print('You are going to ignore the crying baby and wait with your friends.')
+    elif baby_scenario == ('ignore it'):
+        print('You are going to ignore the crying baby and wait with your friends. You and your friend have finished taking pictures and you all get back into the car.')
         return None
-    elif baby_scenario == ('Investigate it on your own'):
+    elif baby_scenario == ('investigate it on your own'):
         print('You are going to check out the stroller by yourself. However, when you walk you to it, there is no baby! The next thing you know, there is a cloth over your mouth and nose, and you slowly black out... GAME OVER') 
         kidnap_end()
-    elif baby_scenario == ('Investigate it with your friends'):
-        print('You are going to check out the stroller with your friends')
-        return None 
-
-
-
-
-
-
 
 def ask_bubble_scenario():
-    print("You and/or your friend have finished taking pictures and you all get back into the car.")
-    print("Your " +friend "finds a place to park and you guys start deciding on what to do next.")
-    print(+friend " said 'Hey there's a bubble tea shop nearby.")
+    print(friend+ " finds a place to park and you guys start deciding on what to do next.")
+    print(friend+ " says 'Hey there's a bubble tea shop nearby.")
     print("You start to get bored as they talk. Do you choose to...")
-    print("Pull out your Nintendo DS " + "Help your friends decdide where to go")
-    choice = input(' ')
-    if choice != ('Pull out your Nintendo DS') and choice != ('Help your friends decide where to go'):
+    print("Pull out your Nintendo DS or " + "Help your friends decide where to go")
+    bubble_choice = input('')
+    if bubble_choice != ('Pull out your Nintendo DS') and bubble_choice != ('Help your friends decide where to go'):
         print("Not a valid answer")
-    elif game = ('n') and choice = ('Pull out your Nintendo DS'):
-        print("You didn't bring your DS with you. Sorry.")
-        print("Your " +friend "finds a place to park and you guys start deciding on what to do next.")
-        print(+friend " said 'Hey there's a bubble tea shop nearby.")
-    elif choice = ('Pull out Nintendo DS'):
-        print("You pulled out your Nintendo DS")
-        return None
-    elif choice = ('Help your friends decide where to go'):
+    elif bubble_choice == ('Pull out your Nintendo DS'):
+        print("Did you bring your DS (y/n)?")
+        game2 = input('')
+        if game2 != ('y') and game2 != ('n'):
+            print("Not a valid answer.")
+        elif game2 == ('y'):
+            print("You pulled out your DS")
+            robbed_end()
+        elif game2 == ('n'):
+            print("You didn't bring your DS with you. Sorry.")
+            print(friend+ "finds a place to park and you guys start deciding on what to do next.")
+            print(friend+ " said 'Hey there's a bubble tea shop nearby.'")
+    elif bubble_choice == ('Help your friends decide where to go'):
         print("You decided to help your friends choose where to go")
         return None
 
-
-
 def robbed_end ():
-	print("")    
+    print("")    
 
 
 
@@ -171,19 +163,25 @@ def robbed_end ():
     
 def kidnap_end():
     print("")
+    exit()
 
 def win_end():
     print("")
+    exit()
 
 def die_end():
-	print("")
+    print("")
+    exit()
+    
 #This is where we run the story
     
 start()
+print("What is your friend's name?")
+friend = input('')
 back_story()
 gameoptions_to_bring()
 phone()
 car_scenario()
-pic_decision()
+pic_scenario()
 baby_scenario()
-
+ask_bubble_scenario()
