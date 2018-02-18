@@ -77,6 +77,7 @@ def phone():
 
 def car_scenario():
     print("You head out the door and get ready to meet " + friend)
+<<<<<<< HEAD
     print("You see a car that looks like your friend's pull up to you and it honks at you to get in.")
     print("The windows are tinted but you heard your friend had recently gotten their windows tinted.")
     print("Do you get in the car (y/n)?")
@@ -90,7 +91,37 @@ def car_scenario():
         print("They haven't.")
         print("You realize that the car in front of you is a stranger, you back away.") 
         return None
+=======
+>>>>>>> 32762b06ec6ba5616ba38244cef864fba1e62de8
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 def pic_scenario():
 	print("Congrats, you aren't an idiot! You wait for for your friend's actual car to pull up and hop in.")
 	print("You and your friends are now headed into the city.")
@@ -105,6 +136,32 @@ def pic_scenario():
 		print("You decided to take some insta-worthy pics with your friends!")
 	elif pic_decision == ('n'):
 		print("You stayed in the car and rested a little while your friends took pictures")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 def baby_scenario():
     print("Suddenly, a shadow appears near a streelight. It's a stroller, and you hear a baby crying. Do you ignore it, investigate it on your own, or investigate with your friends?")
@@ -123,12 +180,30 @@ def baby_scenario():
         return None 
 
 
+
+
+
+
+
 def ask_bubble_scenario():
     print("You and/or your friend have finished taking pictures and you all get back into the car.")
     print("Your " +friend "finds a place to park and you guys start deciding on what to do next.")
     print(+friend " said 'Hey there's a bubble tea shop nearby.")
-    print("You start to get bored as they talk. Do you...")
-
+    print("You start to get bored as they talk. Do you choose to...")
+    print("Pull out your Nintendo DS " + "Help your friends decdide where to go")
+    choice = input(' ')
+    if choice != ('Pull out your Nintendo DS') and choice != ('Help your friends decide where to go'):
+        print("Not a valid answer")
+    elif game = ('n') and choice = ('Pull out your Nintendo DS'):
+        print("You didn't bring your DS with you. Sorry.")
+        print("Your " +friend "finds a place to park and you guys start deciding on what to do next.")
+        print(+friend " said 'Hey there's a bubble tea shop nearby.")
+    elif choice = ('Pull out Nintendo DS'):
+        print("You pulled out your Nintendo DS")
+        return None
+    elif choice = ('Help your friends decide where to go'):
+        print("You decided to help your friends choose where to go")
+        return None
 
 
 
