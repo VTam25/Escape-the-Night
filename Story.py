@@ -218,7 +218,7 @@ def laser_tag ():
 		print("You wait for hours with the paramedics and police until they say you can finally go home.")
 		win_end()
 	elif choice == ('run to your friends'):
-		print("UH OH the guy's lasesr gun was actually A REAL GUN! You and your entire group died!!!")
+		print("UH OH the guy's laser gun was actually A REAL GUN! You and your entire group died!!!")
 		win_end()
     
 def kidnap_end():
