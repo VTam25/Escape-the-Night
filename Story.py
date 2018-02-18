@@ -76,8 +76,8 @@ def phone():
         return None
 
 def car_scenario():
-    print("You head out the door and get ready to meet " + friend)
-    
+
+
 
 
 
@@ -106,10 +106,18 @@ def car_scenario():
 
 
 def pic_scenario():
-
-
-
-
+	print("Congrats! You aren't an idiot!! You wait for your friend's actual car to pull up and hop in.")
+	print("You're now on your way into the city! To your right you see a beautiful sunset.")
+	print("Your friends decide to stop and take pictures. What are you going to do?")
+	print("Do you want to go with them to take some insta-worthy pictures? (y/n)")
+	pic_decision = (input ' ')
+	if pic_decision != ('y') and pic_decision != ('n')
+		print("Not a valid option")
+		print("Do you want to go with them to take some insta-worthy pictures? (y/n)")
+	elif pic_decision == ('y')
+		print("you decided to take some cute pictures")
+	elif pic_decision == ('n')
+		print("you decided to wait in the car and miss out on some pics")
 
 
 
@@ -178,24 +186,7 @@ def baby_scenario():
 
 
 
-def ask_bubble_scenario():
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 
 
 
