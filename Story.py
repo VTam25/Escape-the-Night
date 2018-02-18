@@ -183,7 +183,19 @@ def robbed_end ():
     print("")
     exit()  
 
-
+def taxi_decision
+	print("Congrats! you made the right decision to bring your phone and portable charger!")
+	print("You decide to call a taxi cab.") 
+	print("Do you want to just leave your friends and go home or meet them at the laser tag place? tag or home?")
+		choice=input('')
+		if choice != ('tag') and != ('home'):
+			print("Not a valid answer. tag or home?")
+		elif choice == ('tag')
+			print("You decide to take the cab to the laser tag place to meet up with your friends")
+			return None
+		elif choice == ('home')
+			print("You decide to just go home and call it a night.")
+			win_end()
 
 
 
