@@ -75,9 +75,9 @@ def phone():
         print("Good luck.")
         return None
 
+
 def car_scenario():
     print("You head out the door and get ready to meet " + friend)
-<<<<<<< HEAD
     print("You see a car that looks like your friend's pull up to you and it honks at you to get in.")
     print("The windows are tinted but you heard your friend had recently gotten their windows tinted.")
     print("Do you get in the car (y/n)?")
@@ -91,37 +91,7 @@ def car_scenario():
         print("They haven't.")
         print("You realize that the car in front of you is a stranger, you back away.") 
         return None
-=======
->>>>>>> 32762b06ec6ba5616ba38244cef864fba1e62de8
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def pic_scenario():
 	print("Congrats, you aren't an idiot! You wait for for your friend's actual car to pull up and hop in.")
 	print("You and your friends are now headed into the city.")
@@ -134,32 +104,10 @@ def pic_scenario():
 		print("Do you go with them to take pictures? (y/n")
 	elif pic_decision == ('y'):
 		print("You decided to take some insta-worthy pics with your friends!")
+		return None
 	elif pic_decision == ('n'):
 		print("You stayed in the car and rested a little while your friends took pictures")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                return None
 
 
 
