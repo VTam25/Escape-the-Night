@@ -180,8 +180,11 @@ def phone_decision ():
 
 
 def robbed_end ():
-    print("")
-    exit()  
+    print("You are unable to call your friends because you did not bring your phone and/or did not bring your portable charger.")
+    print("You begin to panic and walk around looking for your friends when you notice a figure following you")
+    print("You ignore it thinking it's a coincidince until you feel a hand on your bag...")
+    print("YOU'VE BEEN ROBBED! This could have been provented if you had only brought your phone and charger :( sorry")
+    end()    
 
 def taxi_decision ():
     print("Congrats! you made the right decision to bring your phone and portable charger!")
